@@ -1,0 +1,14 @@
+.select {
+  background-color: transparent;
+  border: none;
+  color: $color-b-light;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  user-select: none;
+
+  & > option {
+    background-color: $color-dark;
+    border: none;
+  }
+}

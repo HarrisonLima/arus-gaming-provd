@@ -1,0 +1,34 @@
+.navbar {
+  align-items: center;
+  background-color: $color-dark;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__options {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+
+    &__option {
+      color: $color-g-300;
+      cursor: pointer;
+      font-weight: 400;
+      list-style: none;
+      text-decoration: none;
+      user-select: none;
+    }
+  }
+
+  &__language {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
