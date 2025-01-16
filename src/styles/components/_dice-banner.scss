@@ -1,0 +1,52 @@
+.dice-banner {
+  align-items: flex-start;
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 6rem;
+  justify-content: center;
+  user-select: none;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    & > img {
+      width: 80%;
+    }
+  }
+
+  &__typography {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 36rem;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+
+    &__tag {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+}

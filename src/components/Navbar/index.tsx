@@ -6,7 +6,7 @@ const Navbar = () => {
     <header className="navbar">
       <div className="navbar__logo">
         <img src={game} />
-        <h2 className="heading--secondary heading--secondary--gradient">
+        <h2 className="heading--tertiary heading--tertiary--gradient">
           Arus Gaming
         </h2>
       </div>

@@ -1,9 +1,27 @@
 .heading {
   &--primary {
-    font-size: 3rem;
+    color: $color-g-100;
+    font-size: 2.5rem;
+    font-weight: 600;
   }
 
   &--secondary {
+    font-size: 2rem;
+
+    &--gradient {
+      background-image: linear-gradient(
+        to right,
+        $color-b-light 15%,
+        $color-b-dark
+      );
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &--tertiary {
     font-size: 1.5rem;
 
     &--gradient {
@@ -16,6 +34,19 @@
       -moz-background-clip: text;
       background-clip: text;
       color: transparent;
+    }
+  }
+}
+
+.text {
+  font-size: 1rem;
+
+  &--gray {
+    color: $color-g-400;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $color-g-300;
     }
   }
 }
