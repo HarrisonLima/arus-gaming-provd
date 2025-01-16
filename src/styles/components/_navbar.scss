@@ -3,7 +3,7 @@
   background-color: $color-dark;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
 
   &__logo {
     align-items: center;
@@ -22,7 +22,12 @@
       font-weight: 400;
       list-style: none;
       text-decoration: none;
+      transition: all 0.2s ease-in-out;
       user-select: none;
+
+      &:hover {
+        color: $color-g-200;
+      }
     }
   }
 
