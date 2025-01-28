@@ -1,0 +1,72 @@
+.game-card-info {
+  background-color: #1A1A1A;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+
+  &__header {
+    margin-bottom: 16px;
+    color: #FFF;
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  &__content {
+    text-align: left;
+    padding: 8px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #F7F7F8;
+  }
+
+  &__text {
+    font-size: 1rem;
+    color: #B5B6C4;
+  }
+
+  &__difficultyLevel {
+    padding: 10px;
+    font-size: 16px;
+    color: #F8F8F7;
+    border-radius: 32px;
+
+    &.--easy {
+      background-color: #008533;
+    }
+
+    &.--medium {
+      background-color: #F27900;
+    }
+
+    &.--hard {
+      background-color: #AA1103;
+    }
+  }
+
+  &__div-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__how-to-play {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+    color: #3271EE;
+  }
+}
