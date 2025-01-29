@@ -3,7 +3,13 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 400px;
+  transition: ease-in-out;
+  transition-duration: 0.25s;
 
+  &:hover {
+    transform: scale(1.025);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
   &__header {
     margin-bottom: 16px;
     color: #FFF;

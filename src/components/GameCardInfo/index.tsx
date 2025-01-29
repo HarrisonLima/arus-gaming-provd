@@ -24,10 +24,10 @@ const GameCardInfo: React.FC<GameCardInfo> = ({
           <img className="game-card__image" src={imageSrc} alt={imageAlt} />
         </div>
       </header>
-      <main className="game-card__content">
+      <main className="game-card-info__content">
         <div className="game-card-info__div-header">
           <h3 className="game-card__title">{title}</h3>
-          <span className="game-card-info__difficultyLevel --hard">{difficultyLevel}</span>
+          <span className={`game-card-info__difficultyLevel --${difficultyLevel.toLowerCase()}`}>{difficultyLevel}</span>
         </div>
         <p className="game-card__text">{text}</p>
         <div className="game-card-info__how-to-play">

@@ -16,6 +16,7 @@ import heart_flash from "../../assets/heart-flash.svg";
 import poker from "../../assets/poker.png";
 import GameCardInfo from "../../components/GameCardInfo";
 import GameCardInfoSection from "../../components/GameCardInfoSection";
+import Footer from "../../components/Footer";
 
 const cards = [
   {
@@ -54,13 +55,13 @@ const Home = () => {
       <Navbar />
       <DiceBanner />
 
-      
+
       <GameCardSection title="Nossos Jogos" >
         <GameCard imageSrc={bullseye_arrow} imageAlt={"Experimente os Jogos"} title={"Experimente nossos Jogos"} text={"Experimente nosso modo de demonstração para se sentir confortável com os jogos antes de jogar com apostas reais."} />
         <GameCard imageSrc={menu_book} imageAlt={"Leia as regras"} title={"Leia as regras"} text={"Cada jogo vem com regras abrangentes e guias de estratégia. Comece com nossos tutoriais para iniciantes para dominar o básico."} />
         <GameCard imageSrc={medal} imageAlt={"Participe de torneios"} title={"Participe de torneios"} text={"Quando estiver confiante, participe de torneios para competir com outros jogadores e ganhar prêmios incríveis."} />
       </GameCardSection>
-      
+
       <GameCardSection title="Jogo responsável" text="Estamos comprometidos em fornecer um ambiente de jogo seguro e responsável. Use essas ferramentas para manter o controle sobre sua experiência de jogo.">
         <GameCard imageSrc={clock_time_four_outline} imageAlt={"Limites de tempo"} title={"Limites de tempo"} text={"Faça pausas regulares para manter o controle e a diversão."} />
         <GameCard imageSrc={exclusion} imageAlt={"Auto exclusão"} title={"Auto exclusão"} text={"Se sentir que precisa de uma pausa, lembre-se de que é importante jogar com moderação e buscar equilíbrio."} />
@@ -82,6 +83,8 @@ const Home = () => {
         <GameCardInfo difficultyLevel="Medium" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
         <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
       </GameCardInfoSection>
+
+      <Footer></Footer>
     </>
   );
 };
