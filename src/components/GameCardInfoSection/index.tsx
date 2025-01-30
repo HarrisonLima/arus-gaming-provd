@@ -1,4 +1,5 @@
 import React, { useState, ReactNode } from "react";
+import { useTranslation } from 'react-i18next';
 
 interface GameCardInfoSectionProps {
   title: string;
@@ -7,6 +8,7 @@ interface GameCardInfoSectionProps {
 
 const GameCardInfoSection: React.FC<GameCardInfoSectionProps> = ({ title, children }) => {
   const [showAll, setShowAll] = useState(false);
+  const { t } = useTranslation();
 
   const childrenArray = React.Children.toArray(children);
   const displayedChildren = showAll ? childrenArray : childrenArray.slice(0, 3);
@@ -21,7 +23,7 @@ const GameCardInfoSection: React.FC<GameCardInfoSectionProps> = ({ title, childr
         className="game-card-info-section__button"
         onClick={() => setShowAll(!showAll)}
       >
-        {showAll ? "Mostrar menos jogos" : "Explorar mais jogos"}
+        {showAll ? t('gameCardInfoSection.showLess') : t('gameCardInfoSection.exploreMore')}
       </button>
     </section>
   );

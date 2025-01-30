@@ -1,0 +1,53 @@
+{
+  "ourGames": "Nuestros Juegos",
+  "tryGames": "Prueba Nuestros Juegos",
+  "tryGamesDescription": "Prueba nuestro modo de demostración para familiarizarte con los juegos antes de jugar con apuestas reales.",
+  "readRules": "Lee las Reglas",
+  "readRulesDescription": "Cada juego viene con reglas completas y guías de estrategia. Comienza con nuestros tutoriales para principiantes para dominar lo básico.",
+  "joinTournaments": "Únete a Torneos",
+  "joinTournamentsDescription": "Cuando te sientas seguro, únete a torneos para competir con otros jugadores y ganar premios increíbles.",
+  "responsibleGaming": "Juego Responsable",
+  "responsibleGamingDescription": "Estamos comprometidos a proporcionar un entorno de juego seguro y responsable. Usa estas herramientas para mantener el control sobre tu experiencia de juego.",
+  "timeLimits": "Límites de Tiempo",
+  "timeLimitsDescription": "Toma descansos regulares para mantener el control y la diversión.",
+  "selfExclusion": "Autoexclusión",
+  "selfExclusionDescription": "Si sientes que necesitas un descanso, recuerda que es importante jugar con moderación y buscar el equilibrio.",
+  "depositLimits": "Límites de Depósito",
+  "depositLimitsDescription": "Juega con responsabilidad: establece tus límites y respétalos.",
+  "support": "Soporte",
+  "supportDescription": "Si sientes que estás perdiendo el control, busca ayuda de inmediato.",
+  "experienceThrill": "Experimenta la Emoción",
+  "featuredGames": "Juegos Destacados",
+  "howToPlay": "Cómo Jugar",
+  "contactUs": "Contáctenos",
+  "diceBanner": {
+    "title": "¡Experimenta la emoción!",
+    "subtitle": "Juegos increíbles",
+    "description": "Únete a nuestra comunidad de jugadores en un entorno seguro y divertido. Juega con responsabilidad y disfruta de nuestra selección de juegos premium.",
+    "playNow": "Jugar Ahora",
+    "learnMore": "Saber más",
+    "safeGaming": "Juego seguro"
+  },
+  "pokerClassicDescription": "Pon a prueba tus habilidades en Texas Hold'em contra jugadores de todo el mundo.",
+  "footer": {
+    "navigation": "Navegación",
+    "presentation": "Presentación",
+    "howToPlay": "Cómo Jugar",
+    "responsibleGaming": "Juego Responsable",
+    "demoPlay": "Jugar Demostración",
+    "contactUs": "Contáctenos",
+    "contact": "Contacto",
+    "arusSoft": "Arus Soft",
+    "linkedin": "LinkedIn",
+    "whatsapp": "WhatsApp",
+    "arusGaming": "Arus Gaming",
+    "aboutUs": "Sobre Nosotros",
+    "termsOfUse": "Términos de Uso",
+    "privacyPolicy": "Política de Privacidad",
+    "copyright": "Copyright @ 2025. Todos los derechos reservados a este sitio web."
+  },
+  "gameCardInfoSection": {
+    "showLess": "Mostrar menos juegos",
+    "exploreMore": "Explorar más juegos"
+  }
+}

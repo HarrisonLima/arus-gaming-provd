@@ -17,74 +17,37 @@ import poker from "../../assets/poker.png";
 import GameCardInfo from "../../components/GameCardInfo";
 import GameCardInfoSection from "../../components/GameCardInfoSection";
 import Footer from "../../components/Footer";
+import { useTranslation } from 'react-i18next';
 
-const cards = [
-  {
-    imageSrc: "image1.jpg",
-    imageAlt: "Image 1",
-    title: "Game 1",
-    text: "Description for Game 1",
-    difficultyLevel: "Easy",
-  },
-  {
-    imageSrc: "image2.jpg",
-    imageAlt: "Image 2",
-    title: "Game 2",
-    text: "Description for Game 2",
-    difficultyLevel: "Medium",
-  },
-  {
-    imageSrc: "image3.jpg",
-    imageAlt: "Image 3",
-    title: "Game 3",
-    text: "Description for Game 3",
-    difficultyLevel: "Hard",
-  },
-  {
-    imageSrc: "image4.jpg",
-    imageAlt: "Image 4",
-    title: "Game 4",
-    text: "Description for Game 4",
-    difficultyLevel: "Easy",
-  },
-  // Adicione mais cards conforme necessário
-];
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Navbar />
       <DiceBanner />
 
-
-      <GameCardSection title="Nossos Jogos" >
-        <GameCard imageSrc={bullseye_arrow} imageAlt={"Experimente os Jogos"} title={"Experimente nossos Jogos"} text={"Experimente nosso modo de demonstração para se sentir confortável com os jogos antes de jogar com apostas reais."} />
-        <GameCard imageSrc={menu_book} imageAlt={"Leia as regras"} title={"Leia as regras"} text={"Cada jogo vem com regras abrangentes e guias de estratégia. Comece com nossos tutoriais para iniciantes para dominar o básico."} />
-        <GameCard imageSrc={medal} imageAlt={"Participe de torneios"} title={"Participe de torneios"} text={"Quando estiver confiante, participe de torneios para competir com outros jogadores e ganhar prêmios incríveis."} />
+      <GameCardSection title={t('ourGames')}>
+        <GameCard imageSrc={bullseye_arrow} imageAlt={t('tryGames')} title={t('tryGames')} text={t('tryGamesDescription')} />
+        <GameCard imageSrc={menu_book} imageAlt={t('readRules')} title={t('readRules')} text={t('readRulesDescription')} />
+        <GameCard imageSrc={medal} imageAlt={t('joinTournaments')} title={t('joinTournaments')} text={t('joinTournamentsDescription')} />
       </GameCardSection>
 
-      <GameCardSection title="Jogo responsável" text="Estamos comprometidos em fornecer um ambiente de jogo seguro e responsável. Use essas ferramentas para manter o controle sobre sua experiência de jogo.">
-        <GameCard imageSrc={clock_time_four_outline} imageAlt={"Limites de tempo"} title={"Limites de tempo"} text={"Faça pausas regulares para manter o controle e a diversão."} />
-        <GameCard imageSrc={exclusion} imageAlt={"Auto exclusão"} title={"Auto exclusão"} text={"Se sentir que precisa de uma pausa, lembre-se de que é importante jogar com moderação e buscar equilíbrio."} />
-        <GameCard imageSrc={credit_card} imageAlt={"Limites de Depósito"} title={"Limites de Depósito"} text={"Jogue com responsabilidade: defina seus limites e respeite-os."} />
-        <GameCard imageSrc={heart_flash} imageAlt={"Suporte"} title={"Suporte"} text={"Se sentir que está perdendo o controle, procure ajuda imediatamente."} />
+      <GameCardSection title={t('responsibleGaming')} text={t('responsibleGamingDescription')}>
+        <GameCard imageSrc={clock_time_four_outline} imageAlt={t('timeLimits')} title={t('timeLimits')} text={t('timeLimitsDescription')} />
+        <GameCard imageSrc={exclusion} imageAlt={t('selfExclusion')} title={t('selfExclusion')} text={t('selfExclusionDescription')} />
+        <GameCard imageSrc={credit_card} imageAlt={t('depositLimits')} title={t('depositLimits')} text={t('depositLimitsDescription')} />
+        <GameCard imageSrc={heart_flash} imageAlt={t('support')} title={t('support')} text={t('supportDescription')} />
       </GameCardSection>
 
-      <GameCardInfoSection title="Experimente a emoção">
-        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Easy" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Medium" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Easy" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Medium" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Easy" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Medium" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
-        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text="Teste suas habilidades no Texas Hold'em contra jogadores de todo o mundo." />
+      <GameCardInfoSection title={t('experienceThrill')}>
+        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
+        <GameCardInfo difficultyLevel="Easy" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
+        <GameCardInfo difficultyLevel="Medium" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
+        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
       </GameCardInfoSection>
 
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };

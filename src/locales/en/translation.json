@@ -1,0 +1,53 @@
+{
+  "ourGames": "Our Games",
+  "tryGames": "Try Our Games",
+  "tryGamesDescription": "Try our demo mode to get comfortable with the games before playing with real bets.",
+  "readRules": "Read the Rules",
+  "readRulesDescription": "Each game comes with comprehensive rules and strategy guides. Start with our beginner tutorials to master the basics.",
+  "joinTournaments": "Join Tournaments",
+  "joinTournamentsDescription": "When you're confident, join tournaments to compete with other players and win amazing prizes.",
+  "responsibleGaming": "Responsible Gaming",
+  "responsibleGamingDescription": "We are committed to providing a safe and responsible gaming environment. Use these tools to stay in control of your gaming experience.",
+  "timeLimits": "Time Limits",
+  "timeLimitsDescription": "Take regular breaks to stay in control and have fun.",
+  "selfExclusion": "Self Exclusion",
+  "selfExclusionDescription": "If you feel you need a break, remember that it's important to play in moderation and seek balance.",
+  "depositLimits": "Deposit Limits",
+  "depositLimitsDescription": "Play responsibly: set your limits and stick to them.",
+  "support": "Support",
+  "supportDescription": "If you feel you're losing control, seek help immediately.",
+  "experienceThrill": "Experience the Thrill",
+  "featuredGames": "Featured Games",
+  "howToPlay": "How to Play",
+  "contactUs": "Contact Us",
+  "diceBanner": {
+    "title": "Experience the Thrill!",
+    "subtitle": "Amazing Games",
+    "description": "Join our community of players in a safe and fun environment. Play responsibly and enjoy our selection of premium games.",
+    "playNow": "Play Now",
+    "learnMore": "Learn More",
+    "safeGaming": "Safe Gaming"
+  },
+  "pokerClassicDescription": "Test your skills in Texas Hold'em against players from around the world.",
+  "footer": {
+    "navigation": "Navigation",
+    "presentation": "Presentation",
+    "howToPlay": "How to Play",
+    "responsibleGaming": "Responsible Gaming",
+    "demoPlay": "Play Demo",
+    "contactUs": "Contact Us",
+    "contact": "Contact",
+    "arusSoft": "Arus Soft",
+    "linkedin": "LinkedIn",
+    "whatsapp": "WhatsApp",
+    "arusGaming": "Arus Gaming",
+    "aboutUs": "About Us",
+    "termsOfUse": "Terms of Use",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "Copyright @ 2025. All rights reserved to this website."
+  },
+  "gameCardInfoSection": {
+    "showLess": "Show Less Games",
+    "exploreMore": "Explore More Games"
+  }
+}

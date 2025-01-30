@@ -1,5 +1,6 @@
 import React from "react";
 import exclamation from "../../assets/exclamation.svg";
+import { useTranslation } from 'react-i18next';
 
 
 interface GameCardInfo {
@@ -17,6 +18,8 @@ const GameCardInfo: React.FC<GameCardInfo> = ({
   text,
   difficultyLevel,
 }) => {
+
+  const { t } = useTranslation();
   return (
     <div className="game-card-info">
       <header className="game-card__header">
@@ -32,7 +35,7 @@ const GameCardInfo: React.FC<GameCardInfo> = ({
         <p className="game-card__text">{text}</p>
         <div className="game-card-info__how-to-play">
           <img src={exclamation} alt={exclamation} />
-          <span>Como jogar</span>
+          <span>{t('howToPlay')}</span>
         </div>
       </main>
     </div>

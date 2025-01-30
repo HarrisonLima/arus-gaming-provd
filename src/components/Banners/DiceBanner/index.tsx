@@ -1,41 +1,43 @@
+import React from 'react';
 import dice from "../../../assets/image-dados-banner-principal.png";
 import security from "../../../assets/icon-security.svg";
 import thumbUp from "../../../assets/icon-thumb_up.svg";
+import { useTranslation } from 'react-i18next';
 
 const DiceBanner = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="dice-banner">
       <div className="dice-banner__info">
         <div className="dice-banner__typography">
           <div className="dice-banner__typography__title">
-            <h1 className="heading--primary">Experimente a emoção!</h1>
+            <h1 className="heading--primary">{t('diceBanner.title')}</h1>
             <h2 className="heading--secondary heading--secondary--gradient">
-              Jogos incríveis
+              {t('diceBanner.subtitle')}
             </h2>
           </div>
           <p className="text text--gray">
-            Junte-se à nossa comunidade de jogadores em um ambiente seguro e
-            divertido. Jogue com responsabilidade e aproveite nossa seleção de
-            jogos premium.
+            {t('diceBanner.description')}
           </p>
         </div>
         <div className="dice-banner__buttons">
-          <button className="button button--primary">Jogar Agora</button>
-          <button className="button button--secondary">Saiba mais</button>
+          <button className="button button--primary">{t('diceBanner.playNow')}</button>
+          <button className="button button--secondary">{t('diceBanner.learnMore')}</button>
         </div>
         <div className="dice-banner__tags">
           <div className="dice-banner__tags__tag">
-            <img src={security} />
-            <p className="text text--gray">Jogo seguro</p>
+            <img src={security} alt="Security Icon" />
+            <p className="text text--gray">{t('diceBanner.safeGaming')}</p>
           </div>
           <div className="dice-banner__tags__tag">
-            <img src={thumbUp} />
-            <p className="text text--gray">Jogo justo</p>
+            <img src={thumbUp} alt="Thumb Up Icon" />
+            <p className="text text--gray">{t('diceBanner.safeGaming')}</p>
           </div>
         </div>
       </div>
       <div className="dice-banner__image">
-        <img src={dice} />
+        <img src={dice} alt="Dice Banner" />
       </div>
     </section>
   );
