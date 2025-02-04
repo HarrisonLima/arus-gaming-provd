@@ -45,6 +45,10 @@ const Home = () => {
         <GameCardInfo difficultyLevel="Easy" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
         <GameCardInfo difficultyLevel="Medium" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
         <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
+        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
+        <GameCardInfo difficultyLevel="Easy" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
+        <GameCardInfo difficultyLevel="Medium" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
+        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
       </GameCardInfoSection>
 
       <Footer />
