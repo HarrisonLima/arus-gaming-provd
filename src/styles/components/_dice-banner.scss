@@ -49,4 +49,48 @@
       gap: 0.5rem;
     }
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+
+    &__info {
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    &__typography {
+      max-width: 100%;
+      gap: 1rem;
+
+      &__title {
+        gap: 0.5rem;
+      }
+    }
+
+    &__buttons {
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+
+      .button {
+        width: 100%;
+      }
+    }
+
+    &__tags {
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    &__image {
+      & > img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  }
 }

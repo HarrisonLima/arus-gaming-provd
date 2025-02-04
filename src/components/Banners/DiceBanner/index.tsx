@@ -1,4 +1,3 @@
-import React from 'react';
 import dice from "../../../assets/image-dados-banner-principal.png";
 import security from "../../../assets/icon-security.svg";
 import thumbUp from "../../../assets/icon-thumb_up.svg";
