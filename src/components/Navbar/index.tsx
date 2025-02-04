@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import game from "../../assets/icon-logo.svg";
 import language from "../../assets/icon-language.svg";
 
@@ -7,7 +7,9 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleLanguageChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
     i18n.changeLanguage(event.target.value);
   };
 
@@ -26,17 +28,25 @@ const Navbar = () => {
 
       {/* Menu Hambúrguer */}
       <div className="navbar__hamburger" onClick={toggleMenu}>
-        <div className={`hamburger-line ${isMenuOpen ? 'open' : ''}`} />
-        <div className={`hamburger-line ${isMenuOpen ? 'open' : ''}`} />
-        <div className={`hamburger-line ${isMenuOpen ? 'open' : ''}`} />
+        <div className={`hamburger-line ${isMenuOpen ? "open" : ""}`} />
+        <div className={`hamburger-line ${isMenuOpen ? "open" : ""}`} />
+        <div className={`hamburger-line ${isMenuOpen ? "open" : ""}`} />
       </div>
 
       {/* Menu de Opções */}
-      <ul className={`navbar__options ${isMenuOpen ? 'open' : ''}`}>
-        <li className="navbar__options__option">{t('featuredGames')}</li>
-        <li className="navbar__options__option">{t('howToPlay')}</li>
-        <li className="navbar__options__option">{t('responsibleGaming')}</li>
-        <li className="navbar__options__option">{t('contactUs')}</li>
+      <ul className={`navbar__options ${isMenuOpen ? "open" : ""}`}>
+        <a href="#howToPlay">
+          <li className="navbar__options__option">{t("howToPlay")}</li>
+        </a>
+        <a href="#responsibleGaming">
+          <li className="navbar__options__option">{t("responsibleGaming")}</li>
+        </a>
+        <a href="#experienceThrill">
+          <li className="navbar__options__option">{t("ourGames")}</li>
+        </a>
+        <a href="#contactUs">
+          <li className="navbar__options__option">{t("contactUs")}</li>
+        </a>
         {/* Seletor de Idioma no Mobile */}
         <li className="navbar__options__option navbar__language-mobile">
           <img src={language} alt="Language Icon" />

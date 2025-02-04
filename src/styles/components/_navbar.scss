@@ -17,6 +17,10 @@
     gap: 4rem;
     flex-wrap: wrap;
 
+    & a {
+      text-decoration: none;
+    }
+
     &__option {
       color: $color-g-300;
       cursor: pointer;
@@ -30,8 +34,8 @@
         color: $color-g-200;
       }
     }
-    .navbar__language-mobile {     
-      display: none; 
+    .navbar__language-mobile {
+      display: none;
     }
     @media (max-width: 768px) {
       display: none;
