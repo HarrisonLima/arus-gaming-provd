@@ -17,7 +17,8 @@ import poker from "../../assets/poker.png";
 import GameCardInfo from "../../components/GameCardInfo";
 import GameCardInfoSection from "../../components/GameCardInfoSection";
 import Footer from "../../components/Footer";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
+import ContactForm from "../../components/ContatcForm";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -27,30 +28,118 @@ const Home = () => {
       <Navbar />
       <DiceBanner />
 
-      <GameCardSection title={t('ourGames')}>
-        <GameCard imageSrc={bullseye_arrow} imageAlt={t('tryGames')} title={t('tryGames')} text={t('tryGamesDescription')} />
-        <GameCard imageSrc={menu_book} imageAlt={t('readRules')} title={t('readRules')} text={t('readRulesDescription')} />
-        <GameCard imageSrc={medal} imageAlt={t('joinTournaments')} title={t('joinTournaments')} text={t('joinTournamentsDescription')} />
+      <GameCardSection id="howToPlay" title={t("howToPlay")}>
+        <GameCard
+          imageSrc={bullseye_arrow}
+          imageAlt={t("tryGames")}
+          title={t("tryGames")}
+          text={t("tryGamesDescription")}
+        />
+        <GameCard
+          imageSrc={menu_book}
+          imageAlt={t("readRules")}
+          title={t("readRules")}
+          text={t("readRulesDescription")}
+        />
+        <GameCard
+          imageSrc={medal}
+          imageAlt={t("joinTournaments")}
+          title={t("joinTournaments")}
+          text={t("joinTournamentsDescription")}
+        />
       </GameCardSection>
 
-      <GameCardSection title={t('responsibleGaming')} text={t('responsibleGamingDescription')}>
-        <GameCard imageSrc={clock_time_four_outline} imageAlt={t('timeLimits')} title={t('timeLimits')} text={t('timeLimitsDescription')} />
-        <GameCard imageSrc={exclusion} imageAlt={t('selfExclusion')} title={t('selfExclusion')} text={t('selfExclusionDescription')} />
-        <GameCard imageSrc={credit_card} imageAlt={t('depositLimits')} title={t('depositLimits')} text={t('depositLimitsDescription')} />
-        <GameCard imageSrc={heart_flash} imageAlt={t('support')} title={t('support')} text={t('supportDescription')} />
+      <GameCardSection
+        id="responsibleGaming"
+        title={t("responsibleGaming")}
+        text={t("responsibleGamingDescription")}
+      >
+        <GameCard
+          imageSrc={clock_time_four_outline}
+          imageAlt={t("timeLimits")}
+          title={t("timeLimits")}
+          text={t("timeLimitsDescription")}
+        />
+        <GameCard
+          imageSrc={exclusion}
+          imageAlt={t("selfExclusion")}
+          title={t("selfExclusion")}
+          text={t("selfExclusionDescription")}
+        />
+        <GameCard
+          imageSrc={credit_card}
+          imageAlt={t("depositLimits")}
+          title={t("depositLimits")}
+          text={t("depositLimitsDescription")}
+        />
+        <GameCard
+          imageSrc={heart_flash}
+          imageAlt={t("support")}
+          title={t("support")}
+          text={t("supportDescription")}
+        />
       </GameCardSection>
 
-      <GameCardInfoSection title={t('experienceThrill')}>
-        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
-        <GameCardInfo difficultyLevel="Easy" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
-        <GameCardInfo difficultyLevel="Medium" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
-        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
-        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
-        <GameCardInfo difficultyLevel="Easy" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
-        <GameCardInfo difficultyLevel="Medium" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
-        <GameCardInfo difficultyLevel="Hard" imageSrc={poker} imageAlt="Poker Clássico" title="Poker Clássico" text={t('pokerClassicDescription')} />
+      <GameCardInfoSection id="experienceThrill" title={t("experienceThrill")}>
+        <GameCardInfo
+          difficultyLevel="Hard"
+          imageSrc={poker}
+          imageAlt="Poker Clássico"
+          title="Poker Clássico"
+          text={t("pokerClassicDescription")}
+        />
+        <GameCardInfo
+          difficultyLevel="Easy"
+          imageSrc={poker}
+          imageAlt="Poker Clássico"
+          title="Poker Clássico"
+          text={t("pokerClassicDescription")}
+        />
+        <GameCardInfo
+          difficultyLevel="Medium"
+          imageSrc={poker}
+          imageAlt="Poker Clássico"
+          title="Poker Clássico"
+          text={t("pokerClassicDescription")}
+        />
+        <GameCardInfo
+          difficultyLevel="Hard"
+          imageSrc={poker}
+          imageAlt="Poker Clássico"
+          title="Poker Clássico"
+          text={t("pokerClassicDescription")}
+        />
+        <GameCardInfo
+          difficultyLevel="Hard"
+          imageSrc={poker}
+          imageAlt="Poker Clássico"
+          title="Poker Clássico"
+          text={t("pokerClassicDescription")}
+        />
+        <GameCardInfo
+          difficultyLevel="Easy"
+          imageSrc={poker}
+          imageAlt="Poker Clássico"
+          title="Poker Clássico"
+          text={t("pokerClassicDescription")}
+        />
+        <GameCardInfo
+          difficultyLevel="Medium"
+          imageSrc={poker}
+          imageAlt="Poker Clássico"
+          title="Poker Clássico"
+          text={t("pokerClassicDescription")}
+        />
+        <GameCardInfo
+          difficultyLevel="Hard"
+          imageSrc={poker}
+          imageAlt="Poker Clássico"
+          title="Poker Clássico"
+          text={t("pokerClassicDescription")}
+        />
       </GameCardInfoSection>
 
+      <ContactForm />
       <Footer />
     </>
   );

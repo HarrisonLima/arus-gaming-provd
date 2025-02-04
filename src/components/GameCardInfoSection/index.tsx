@@ -1,12 +1,17 @@
 import React, { useState, ReactNode } from "react";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 interface GameCardInfoSectionProps {
+  id: string;
   title: string;
   children: ReactNode;
 }
 
-const GameCardInfoSection: React.FC<GameCardInfoSectionProps> = ({ title, children }) => {
+const GameCardInfoSection: React.FC<GameCardInfoSectionProps> = ({
+  id,
+  title,
+  children,
+}) => {
   const [showAll, setShowAll] = useState(false);
   const { t } = useTranslation();
 
@@ -14,16 +19,16 @@ const GameCardInfoSection: React.FC<GameCardInfoSectionProps> = ({ title, childr
   const displayedChildren = showAll ? childrenArray : childrenArray.slice(0, 3);
 
   return (
-    <section className="game-card-info-section">
+    <section className="game-card-info-section" id={id}>
       <h2 className="game-card-info-section__title">{title}</h2>
-      <div className="game-card-info-section__cards">
-        {displayedChildren}
-      </div>
+      <div className="game-card-info-section__cards">{displayedChildren}</div>
       <button
         className="game-card-info-section__button"
         onClick={() => setShowAll(!showAll)}
       >
-        {showAll ? t('gameCardInfoSection.showLess') : t('gameCardInfoSection.exploreMore')}
+        {showAll
+          ? t("gameCardInfoSection.showLess")
+          : t("gameCardInfoSection.exploreMore")}
       </button>
     </section>
   );
