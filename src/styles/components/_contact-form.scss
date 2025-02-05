@@ -1,0 +1,115 @@
+.contact-form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+  width: 100%;
+
+  &__content {
+    align-items: center;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.25rem 1rem rgba(#000000, 0.32);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 4rem;
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+
+    &:hover {
+      box-shadow: 0 0.25rem 1rem rgba($color-b-dark, 0.24);
+      transform: scale(1.025);
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: start;
+    user-select: none;
+    width: 100%;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 44rem;
+    user-select: none;
+
+    &__input-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+      width: 100%;
+
+      & label {
+        font-size: 1rem;
+        color: $color-g-100;
+        font-weight: 400;
+      }
+
+      & input {
+        appearance: none;
+        background-color: transparent;
+        border: 0.125rem solid $color-b-dark;
+        border-radius: 0.5rem;
+        color: $color-g-300;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    &__textarea-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+      width: 100%;
+
+      & label {
+        font-size: 1rem;
+        color: $color-g-100;
+        font-weight: 400;
+      }
+
+      & textarea {
+        appearance: none;
+        background-color: transparent;
+        border: 0.125rem solid $color-b-dark;
+        border-radius: 0.5rem;
+        color: $color-g-300;
+        padding: 0.5rem 1rem;
+        min-height: 6rem;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    user-select: none;
+
+    &__item {
+      align-items: center;
+      display: flex;
+      gap: 0.25rem;
+      
+      & p {
+        user-select: text;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
