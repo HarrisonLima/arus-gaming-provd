@@ -49,5 +49,13 @@
   "gameCardInfoSection": {
     "showLess": "Show Less Games",
     "exploreMore": "Explore More Games"
-  }
+  },
+  "questions": "More questions?",
+  "channels": "Contact us on some of our channels.",
+  "name": "Full name",
+  "subject": "Subject",
+  "mail": "Mail",
+  "phone": "Phone",
+  "message": "Message",
+  "sendMessage": "Send message"
 }

@@ -1,24 +1,32 @@
 import mail from "../../assets/mail.svg";
 import call from "../../assets/call.svg";
 import business from "../../assets/business.svg";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="contact-form">
       <div className="contact-form__content">
         <header className="contact-form__header">
-          <h1 className="heading--primary">Ainda com dúvidas?</h1>
+          <h1 className="heading--primary">{t("questions")}</h1>
           <p className="text text--gray">
-            Entre em contato conosco em algum de nossos canais.
+          {t("channels")}
           </p>
         </header>
         <form className="contact-form__form">
           <div className="contact-form__form__input-box">
-            <label htmlFor="name">Nome completo</label>
-            <input type="text" id="name" name="nome" placeholder="ex.João da Silva" />
+            <label htmlFor="name">{t("name")}</label>
+            <input
+              type="text"
+              id="name"
+              name="nome"
+              placeholder="ex.João da Silva"
+            />
           </div>
           <div className="contact-form__form__input-box">
-            <label htmlFor="subject" >Assunto</label>
+            <label htmlFor="subject">{t("subject")}</label>
             <input
               type="text"
               id="subject"
@@ -27,7 +35,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="contact-form__form__input-box">
-            <label htmlFor="mail">E-mail</label>
+            <label htmlFor="mail">{t("mail")}</label>
             <input
               type="text"
               id="mail"
@@ -36,7 +44,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="contact-form__form__input-box">
-            <label htmlFor="contact">Contato</label>
+            <label htmlFor="contact">{t("phone")}</label>
             <input
               type="text"
               id="contact"
@@ -45,7 +53,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="contact-form__form__textarea-box">
-            <label htmlFor="message">Mensagem</label>
+            <label htmlFor="message">{t("message")}</label>
             <textarea
               name="mensagem"
               id="message"
@@ -68,7 +76,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="contact-form__button">
-          <button className="button button--primary">Enviar mensagem</button>
+          <button className="button button--primary">{t("sendMessage")}</button>
         </div>
       </div>
     </section>
