@@ -4,6 +4,9 @@ import GameCard from "../../components/GameCard";
 import Navbar from "../../components/Navbar";
 import GameCardSection from "../../components/GameSectionCard";
 
+
+
+
 // Our games
 import bullseye_arrow from "../../assets/bullseye-arrow.svg";
 import menu_book from "../../assets/menu_book.svg";
@@ -19,7 +22,7 @@ import GameCardInfoSection from "../../components/GameCardInfoSection";
 import Footer from "../../components/Footer";
 import { useTranslation } from "react-i18next";
 import ContactForm from "../../components/ContatcForm";
-import { fetchGameData } from '../../services/fetchGameData'; 
+import { fetchGameData } from '../../services/fetchGameData';
 
 interface Categoria {
   id: number;
