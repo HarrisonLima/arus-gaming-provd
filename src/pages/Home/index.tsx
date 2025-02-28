@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import DiceBanner from "../../components/Banners/DiceBanner";
 import GameCard from "../../components/GameCard";
 import Navbar from "../../components/Navbar";
