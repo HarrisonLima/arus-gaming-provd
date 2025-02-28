@@ -3,38 +3,105 @@
   background-color: #1A1A1A;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 366px;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 
   &__header {
     margin-bottom: 16px;
     color: #FFF;
+    position: relative;
+    z-index: 1;
+    padding: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    /* Glass effect no header */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: var(--bg-image);
+      background-size: cover;
+      background-position: center;
+      filter: blur(10px);
+      opacity: 0.7;
+      z-index: -1;
+      transition: opacity 0.3s ease;
+    }
+
+    .game-card:hover &::before {
+      opacity: 1;
+    }
   }
 
   &__image-container {
-    display: flex;
+    display: flex
+;
     justify-content: start;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px 20px 0;
+    gap: 10px;
   }
 
   &__image {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
 
-    padding: 0 20px 20px 0px;
-  }
-
-  &__content {
-    text-align: left;
+    .game-card:hover & {
+      transform: scale(1.05);
+    }
   }
 
   &__title {
     font-size: 1.5rem;
     margin-bottom: 8px;
     color: #F7F7F8;
+    position: relative;
+    z-index: 2;
   }
 
   &__text {
     font-size: 1rem;
     color: #B5B6C4;
+  }
+
+  &__difficulty {
+    font-size: 0.9rem;
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+
+  &__how-to-play {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #FFF;
+    cursor: pointer;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
   }
 }

@@ -20,11 +20,14 @@ const GameCardInfo: React.FC<GameCardInfo> = ({
   const { t } = useTranslation();
 
   return (
-    <div className="game-card-info">
-      <header className="game-card__header">
+    <div className="game-card">
+      <header 
+        className="game-card__header"
+        style={{ '--bg-image': `url(${imageSrc})` } as React.CSSProperties}
+      >
         <div className="game-card__image-container">
           <img className="game-card__image" src={imageSrc} alt={imageAlt} />
-          <h3 className="game-card__title">{title}</h3> {/* Título ao lado da imagem */}
+          <h3 className="game-card__title">{title}</h3>
         </div>
         <span className={`game-card-info__difficultyLevel --${difficultyLevel.toLowerCase()}`}>
           {difficultyLevel}
